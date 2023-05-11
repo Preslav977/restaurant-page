@@ -1,0 +1,43 @@
+body {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-img {
+  display: flex;
+  justify-content: center;
+  border-radius: 30%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.restaurant-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  margin-top: auto;
+  background-color: rgb(222, 234, 245);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

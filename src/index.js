@@ -1,1 +1,8 @@
-console.log('Making sure webpack is running!');
+import './style.css';
+
+function component() {
+  const element = document.createElement('div');
+  return element;
+}
+
+document.body.appendChild(component());
