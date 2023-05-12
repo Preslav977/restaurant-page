@@ -1,43 +1,115 @@
-body {
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 10px;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.home-img {
+body {
   display: flex;
-  justify-content: center;
-  border-radius: 30%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.restaurant-menu {
+.header-content {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  height: 100px;
+  font-size: 25px;
+  background-color: #f4f2f8;
+}
+
+.restaurant-tab-container {
+  display: flex;
+  gap: 6em;
+  justify-content: center;
+  outline: 1px solid black;
+  height: 80px;
+  align-items: center;
+  background-color: #4a7856;
+  color: #fff;
 }
 
 li {
-  list-style-type: none;
+  list-style: none;
+}
+
+.home-page {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.flag-container {
+  margin-top: 20px;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  opacity: 0.6;
 }
 
 footer {
-  margin-top: auto;
-  background-color: rgb(222, 234, 245);
-  height: 100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 137px;
+  background-color: #ff4754;
+  color: #fff;
+}
+
+.flag-img {
+  width: 400px;
+  height: 200px;
+}
+
+.home-img-tab {
+  width: 100%;
+  height: 100%;
+}
+
+.home-tab-container {
+  outline: 2px solid black;
+  position: absolute;
+  height: 250px;
+  width: 600px;
+  bottom: 20%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.first-paragraph {
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.join-btn {
+  margin-top: 10px;
+  padding: 10px 50px 10px 50px;
+  font-size: 20px;
+  background-color: #4a7856;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.join-btn:hover {
+  cursor: pointer;
+}
+
+li:hover {
+  cursor: pointer;
 }

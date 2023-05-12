@@ -1,8 +1,11 @@
-import './style.css';
+import {
+  createHeader,
+  createTabMenu,
+  createHomeTab,
+  createFooter,
+} from './initialLoad';
 
-function component() {
-  const element = document.createElement('div');
-  return element;
-}
-
-document.body.appendChild(component());
+createHeader('header', 'restaurant-header', 'Bulgarian Restaurant');
+createTabMenu('restaurant-tab');
+createHomeTab();
+createFooter();
