@@ -5,24 +5,32 @@ import flag from './bulgarian_flag.png';
 const content = document.getElementById('content');
 
 function createHeader(elementType, elementClass, elementText) {
-  // main container to append the content
+  // create container to append, content
   const container = document.createElement('div');
+  // add class to the container
   container.classList.add('header-content');
-  // container to append the content
+  // create containerContent with parameter
   const containerContent = document.createElement(elementType);
+  // add class to that containerContent
   containerContent.classList.add(elementClass);
+  // add textContent to the containerContent
   containerContent.textContent = elementText;
+  // apppend the div to the header
   container.appendChild(containerContent);
+  // append to the content div, the container
   content.appendChild(container);
 }
 
 function createTabMenu(elementClass) {
-  // div container
+  // create div container
   const container = document.createElement('div');
+  // add class to the container
   container.classList.add('restaurant-tab-container');
   // creating li
   const homeTab = document.createElement('li');
+  // add class to the li
   homeTab.classList.add(elementClass);
+  // add textContent to the li
   homeTab.textContent = 'Home';
   // appending to the container
   container.appendChild(homeTab);
@@ -65,14 +73,19 @@ function createHomeTab() {
   const firstParagraph = document.createElement('p');
   firstParagraph.classList.add('first-paragraph');
   firstParagraph.textContent =
-    'Welcome to our restaurant!, come and taste our delicious meals and decent price';
+    'Welcome to our restaurant, come and taste our delicious meals and decent price!';
   const button = document.createElement('button');
   button.classList.add('join-btn');
   button.textContent = 'JOIN';
+  // apppend the button to the paragraph
   firstParagraph.appendChild(button);
+  // append the paragraph to the homeTabContainer
   homeTabContainer.appendChild(firstParagraph);
+  // apppend the flagContainer to the container
   container.appendChild(flagContainer);
+  // append the mainTag to the container
   mainTag.appendChild(container);
+  // append the mainTag to the content div
   content.appendChild(mainTag);
 }
 

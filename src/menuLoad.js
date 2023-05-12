@@ -16,9 +16,11 @@ function createMenuTab() {
   container.classList.add('menu-page');
   const menuTabContainer = document.createElement('div');
   menuTabContainer.classList.add('menu-tab-container');
+  // add image
   const homeImageTab = new Image();
   homeImageTab.src = homeImage;
   homeImageTab.classList.add('home-img-tab');
+  // append content
   container.appendChild(homeImageTab);
   container.appendChild(menuTabContainer);
   mainTag.appendChild(container);
