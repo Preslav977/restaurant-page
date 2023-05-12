@@ -1,7 +1,6 @@
 import './style.css';
 import homeImage from './background.jpg';
 import flag from './bulgarian_flag.png';
-import chef from './chef.jpg';
 
 const content = document.getElementById('content');
 
