@@ -64,7 +64,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 136px;
+  height: 100px;
   background-color: #ff4754;
   color: #fff;
 }
@@ -76,7 +76,7 @@ footer {
 
 .home-img-tab {
   width: 100%;
-  height: 100%;
+  height: 110%;
 }
 
 .home-tab-container {
@@ -128,7 +128,7 @@ li:hover {
 .menu-img-tab,
 .contact-img-tab {
   width: 100%;
-  height: 600px;
+  height: 700px;
 }
 
 .menu-tab-container {
