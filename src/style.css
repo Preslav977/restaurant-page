@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Raleway', 'Times New Roman', Times, serif;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./Raleway-Italic-VariableFont_wght.ttf');
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -93,7 +101,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .join-btn {
@@ -107,14 +115,20 @@ footer {
 }
 
 .join-btn:hover,
-.li:hover {
+li:hover {
   cursor: pointer;
 }
 
 .menu-page {
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   /* justify-content: center; */
+}
+
+.menu-img-tab,
+.contact-img-tab {
+  width: 100%;
+  height: 600px;
 }
 
 .menu-tab-container {
@@ -158,9 +172,9 @@ footer {
   cursor: pointer;
 }
 
-.contact-img-tab {
-  width: 700px;
+.contact-img {
   height: 300px;
+  width: 700px;
 }
 
 .contact-us {

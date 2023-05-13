@@ -11,20 +11,28 @@ import tarator from './tarator.jpg';
 const content = document.getElementById('content');
 
 function createMenuTab() {
+  // create mainContainer
+  const mainContainer = document.createElement('div');
+  // add class to mainContainer
+  mainContainer.classList.add('restaurant-container');
+  // create mainTag
   const mainTag = document.createElement('main');
-  const container = document.createElement('div');
-  container.classList.add('menu-page');
+  mainTag.classList.add('main-container');
+  // create menuTabContentContainer
+  const menuTabContentContainer = document.createElement('div');
+  menuTabContentContainer.classList.add('menu-page');
+  // add image menuImageTab
+  const menuImageTab = new Image();
+  menuImageTab.src = homeImage;
+  menuImageTab.classList.add('menu-img-tab');
+  menuTabContentContainer.appendChild(menuImageTab);
+  // create menuTabContainer
   const menuTabContainer = document.createElement('div');
   menuTabContainer.classList.add('menu-tab-container');
-  // add image
-  const homeImageTab = new Image();
-  homeImageTab.src = homeImage;
-  homeImageTab.classList.add('home-img-tab');
-  // append content
-  container.appendChild(homeImageTab);
-  container.appendChild(menuTabContainer);
-  mainTag.appendChild(container);
-  content.appendChild(mainTag);
+  menuTabContentContainer.appendChild(menuTabContainer);
+  mainContainer.appendChild(mainTag);
+  mainTag.appendChild(menuTabContentContainer);
+  content.appendChild(mainContainer);
 
   const mealOne = document.createElement('div');
   // meal one
