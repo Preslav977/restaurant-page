@@ -15,19 +15,18 @@ createHomeTab();
 createFooter();
 
 function switchTabs(e) {
-  const getLiId = e.target;
-  console.log(getLiId);
-  const saveLiId = getLiId.getAttribute('restaurant-tab');
+  const getLiElementId = e.target;
+  const saveLiElementId = getLiElementId.getAttribute('restaurant-tab');
   const restaurantContainer = document.querySelector('.restaurant-container');
   console.log(restaurantContainer);
 
-  if (saveLiId === '1') {
+  if (saveLiElementId === '1') {
     restaurantContainer.remove();
     createMenuTab();
-  } else if (saveLiId === '2') {
+  } else if (saveLiElementId === '2') {
     restaurantContainer.remove();
     createContactTab();
-  } else if (saveLiId === '0') {
+  } else if (saveLiElementId === '0') {
     restaurantContainer.remove();
     createHomeTab();
   }
